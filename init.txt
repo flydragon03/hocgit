@@ -40,3 +40,8 @@ bỏ qua các tập tin
 	học sau
 commit tất cả tập tin đã theo dõi và có sự thay đổi
 	git commit -a -m "<tieu de>"
+xóa tập tin
+xóa hẳn trên ổ cứng (có thể khôi phục từ github)
+	git rm <tên file>
+chỉ xóa theo dõi (bỏ staged)
+	git rm	--cached <tên file>
