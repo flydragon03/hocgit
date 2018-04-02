@@ -1,0 +1,11 @@
+diff --git a/init.txt b/init.txt
+index b2410fd..1981b98 100644
+--- a/init.txt
++++ b/init.txt
+@@ -33,3 +33,5 @@ công cụ kiểm tra trạng thái của tập tin
+ 	git status
+ theo dõi các 'tập tin mới'/'tập tin đã thay đổi'
+ 	add <tên tập tin>
++bỏ qua các tập tin
++	học sau
+\ No newline at end of file
