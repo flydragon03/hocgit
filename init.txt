@@ -1,0 +1,35 @@
+
+cấu hình lần đầu khi sử dụng
+thay đổi cho hệ thống 	--system
+thay đổi cho tài khoản 	--global
+	git config --global user.name "<tên tài khoản>"
+	git config --global user.email "<tên email>"
+đổi trình soạn thảo thành emacs
+	git config --global core.editor emacs
+công cụ so sánh thay đổi	(chấp nhận:kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, và opendiff là các công cụ trộn/sát nhập (merge) hợp lệ)
+	git config --global merge.tool vimdiff
+kiểm tra cấu hình		(nếu trùng nhau, có hiệu lực là giá trị cuối của mỗi từ khóa duy nhất)
+	git config --list
+giá trị 1 từ khóa riêng biệt
+	git config user.name
+trợ giúp
+	git help <verb>
+	git <verb> --help
+	man git-<verb>
+khởi tạo 1 kho chứa từ thư mục cũ
+tạo thư mục .git
+	git init
+đánh dấu tập tin/thư mục để thực hiện commit
+	git add <tên thư mục>
+commit các tập tin đã đánh dấu
+	git commit -m "<tiêu đề gợi nhớ lần commit>"
+sao chép 1 kho chứa đã tồn tại
+sao chép từ tài khoản: flydragon03 và từ thư mục hocgit
+	git clone git://github.com/flydragon03/hocgit.git
+thay đổi thư mục đích
+	git clone git://github.com/flydragon03/hocgit.git <tên thư mục>
+các giao thức truyền tải (git://	http(s)://	user@server:/path.git	hoặc thông qua giao thức ssh)
+công cụ kiểm tra trạng thái của tập tin
+	git status
+theo dõi các 'tập tin mới'/'tập tin đã thay đổi'
+	add <tên tập tin>
