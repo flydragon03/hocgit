@@ -1,0 +1,28 @@
+git phân nhánh
+tạo nhánh mới (ngay tại nhánh master)
+	git branch <tên nhánh>
+	xóa nhánh
+	git branch -d <tên nhánh>
+	xóa nhánh chấp nhận mất dữ liệu
+	git branch -D <tên nhánh>
+chuyển con trỏ của nhánh
+	git checkout <tên nhánh>
+	tạo và chuyển con trỏ đồng thời
+	git checkout -b <tên nhánh>
+tích hợp nhánh
+	git merge <tên nhánh>
+	công cụ hỗ trợ tích hợp nhánh
+	git mergetool
+
+	
+quản lý nhánh
+danh sách nhánh
+	git branch
+xem commit mới nhất của các nhánh
+	git branch -v
+xem nhánh đã tích hợp vào nhánh hiện tại
+	git branch --merged
+	git branch --no-merged
+	
+nhánh remote
+rebase

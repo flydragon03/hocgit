@@ -23,6 +23,8 @@ tạo thư mục .git
 	git add <tên thư mục>
 commit các tập tin đã đánh dấu
 	git commit -m "<tiêu đề gợi nhớ lần commit>"
+commit tất cả tập tin đã theo dõi và có sự thay đổi
+	git commit -a -m "<tieu de>"
 sao chép 1 kho chứa đã tồn tại
 sao chép từ tài khoản: flydragon03 và từ thư mục hocgit
 	git clone git://github.com/flydragon03/hocgit.git
@@ -36,12 +38,64 @@ theo dõi các 'tập tin mới'/'tập tin đã thay đổi'
 kiểm tra chi tiết
 	git diff
 	git diff --staged
-bỏ qua các tập tin
-	học sau
-commit tất cả tập tin đã theo dõi và có sự thay đổi
-	git commit -a -m "<tieu de>"
 xóa tập tin
 xóa hẳn trên ổ cứng (có thể khôi phục từ github)
 	git rm <tên file>
 chỉ xóa theo dõi (bỏ staged)
 	git rm	--cached <tên file>
+các chức năng con
+bỏ qua các tập tin (tạo tập tin .gitignore)
+di chuyển tập tin	(git mv file_from file_to)
+xem lịch sử commit	(git log)
+	-p 	hiển thị diff của từng commit
+	-2	giới hạn 2 commit gần nhất
+	tìm hiểu thêm tham số
+cách giới hạn thông tin đầu ra
+	chưa xong
+hiển thị lịch sử giao diện
+	gitk
+Phục hôi
+thay đổi commit cuối cùng
+	git commit --amend
+loại bỏ tập tin đã tổ chức
+	git reset HEAD <file>
+phục hồi tập tin đã thay đổi
+	git checkout -- <file>
+xem thêm phần phục hồi dữ liệu
+làm việc máy chủ từ xa
+hiển thị máy chủ kết nối (tham số -v hiển thị tất cả)
+	git remote
+thêm kho chứa từ xa
+	git remote add <shortname> <URL>
+duyệt file từ máy chủ phục
+	git fetch <shortname máy chủ>
+truy cập và kéo về từ máy chủ trung tâm
+	git fetch <remote name>
+đẩy lên máy chủ trung tâm
+	git push origin master
+kiểm tra 1 máy chủ trung tâm
+	git remote show <tên trung tâm>
+xóa và đổi tên từ xa
+	git remote rename <tên hiện tại> <tên muốn đổi>
+	git remote rm <tên nhánh cần xóa>
+đánh dấu - tag
+liệt kê tag
+	git tag
+	git show
+thêm mới tag có chú thích
+	chú thích thường
+	git tag -a v1.4 -m 'my version 1.4'
+	chú thích có chữ ký số
+	git tag -s v1.5 -m 'my signed 1.5 tag'
+tag nhẹ (lightweight tags)
+	git tag v1.4-lw
+xác thực các tag
+	git tag -v v1.4.2.1
+tag muộn
+	git log --pretty=oneline
+	git tag -a v1.2 -m 'version 1.2' 9fceb02
+chia sẻ các tag
+	git push origin v1.5
+	git push origin --tags
+bí danh trong git
+	git config --global alias.co checkout
